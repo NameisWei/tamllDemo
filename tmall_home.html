@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tmall Demo</title>
+    <link href="tmall_home.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="tmall_home.js"></script>
+</head>
+<body>
+<!-- 置顶导航-->
+<nav class="top ">
+    <a href="#nowhere"><span class="glyphicon glyphicon-home redColor"></span>天猫首页</a>
+    <span>喵，欢迎来天猫</span>
+    <a href="#nowhere">请登录</a>
+    <a href="#nowhere">免费注册</a>
+    <span class="pull-right">
+        <a href="#nowhere">我的订单</a>
+        <a href="#nowhere"><span class=" glyphicon glyphicon-shopping-cart redColor" ></span>购物车<strong>0</strong>件</a>
+        <a href="#nowhere">收藏夹</a>
+        <a href="#nowhere"><span class=" glyphicon glyphicon-phone redColor" ></span>手机版</a>
+        <a href="#nowhere">淘宝网</a>
+        <a href="#nowhere">商家支持</a>
+        <a href="#nowhere"><span class=" glyphicon glyphicon-menu-hamburger redColor" ></span>网站导航</a>
+    </span>
+</nav>
+
+<!--搜索栏-->
+<div>
+    <a href="#nowhere"> <img class="logo" src="//img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png" id="logo"></a>
+    <div class="searchDiv">
+        <input type="text" placeholder="搜索 天猫 商品/品牌/店铺 " name="keyword">
+        <button class="searchButton" type="submit">搜索</button>
+        <div class="searchBelow">
+            <span> <a href="#nowhere">针织衫</a> <span>|</span>
+            </span> <span> <a href="#nowhere">羽绒服</a><span>|</span>
+            </span> <span> <a href="#nowhere">四件套</a><span>|</span>
+            </span> <span> <a href="#nowhere">电动牙刷</a></span><span>|</span>
+            </span> <span> <a href="#nowhere">客厅灯</a></span><span>|</span>
+            </span> <span> <a href="#nowhere">口红</a></span>
+        </div>
+    </div>
+</div>
+
+
+<!--分类和轮播和推荐产品-->
+<div class="categoryWithCarousel">
+    <div class="headbar">
+        <div class="head ">
+            <span class="glyphicon glyphicon-th-list" style="margin-left:10px"></span>
+            <span style="margin-left:10px">商品分类</span>
+        </div>
+        <div class="rightMenu">
+            <span><a href="#nowhere"><img src="img/site/tianmaochaoshi.png"></a></span>
+            <span><a href="#nowhere"><img src="img/site/tianmaoguoji.png"></a></span>
+            <span><a href="#nowhere">天猫会员</a></span>
+            <span><a href="#nowhere">电器城</a></span>
+            <span><a href="#nowhere">喵鲜生</a></span>
+            <span><a href="#nowhere">医药馆</a></span>
+            <span><a href="#nowhere">营业厅</a></span>
+            <span><a href="#nowhere">魅力惠</a></span>
+            <span><a href="#nowhere">飞猪旅行</a></span>
+            <span><a href="#nowhere">苏宁易购</a></span>
+        </div>
+    </div>
+    <!--轮播图-->
+    <div data-ride="carousel" class="carousel-of-product carousel slide" id="carousel-of-productcarousel-of-product" style="position:absolute; left: 300px;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#carousel-of-product"></li>
+            <li data-slide-to="1" data-target="#carousel-of-product" class=""></li>
+            <li data-slide-to="2" data-target="#carousel-of-product" class=""></li>
+            <li data-slide-to="3" data-target="#carousel-of-product" class=""></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div role="listbox" class="carousel-inner">
+            <div class="item active">
+                <img src="img/lunbo/1.jpg" class="carousel carouselImage">
+            </div>
+            <div class="item">
+                <img src="img/lunbo/2.jpg" class="carouselImage">
+            </div>
+            <div class="item">
+                <img src="img/lunbo/3.jpg" class="carouselImage">
+            </div>
+            <div class="item">
+                <img src="img/lunbo/4.jpg" class="carouselImage">
+            </div>
+        </div>
+    </div>
+    <div style="position: relative">
+        <div class="categoryMenu ">
+            <div class="eachCategory" cid="83">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">大家电/生活电器</a>
+            </div>
+            <div class="eachCategory" cid="82">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">女装/内衣</a>
+            </div>
+            <div class="eachCategory" cid="81">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">男装/运动户外</a>
+            </div>
+            <div class="eachCategory" cid="80">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">女鞋/男鞋/箱包</a>
+            </div>
+            <div class="eachCategory" cid="79">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">美妆/个人护理</a>
+            </div>
+            <div class="eachCategory" cid="78">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">腕表/眼睛/珠宝饰品</a>
+            </div>
+            <div class="eachCategory" cid="77">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">原汁机</a>
+            </div>
+            <div class="eachCategory" cid="76">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">母婴玩具</a>
+            </div>
+            <div class="eachCategory" cid="75">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">零食/进口食品</a>
+            </div>
+            <div class="eachCategory" cid="74">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">生鲜水果</a>
+            </div>
+            <div class="eachCategory" cid="73">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">家居建材</a>
+            </div>
+            <div class="eachCategory" cid="72">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">汽车/配件</a>
+            </div>
+            <div class="eachCategory" cid="71">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">男士西服</a>
+            </div>
+            <div class="eachCategory" cid="69">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">时尚男鞋</a>
+            </div>
+            <div class="eachCategory" cid="68">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">品牌女装</a>
+            </div>
+            <div class="eachCategory" cid="64">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">太阳镜</a>
+            </div>
+            <div class="eachCategory" cid="60">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">安全座椅</a>
+            </div>
+        </div>
+    </div>
+
+    <!--推荐产品-->
+    <div style="position: relative;left: 0;top: 0;">
+        <div class="productsAsideCategorys" cid="83" style="display: none;">
+            <div class="row ">
+                <a href="#nowhere">4K超清</a>
+                <a href="#nowhere">国产</a>
+                <a href="#nowhere">外资品牌</a>
+                <a href="#nowhere">曲面</a>
+                <a href="#nowhere">智能电视</a>
+                <div class="seperator"></div>
+            </div>
+            <div class="row ">
+                <a href="#nowhere">节能</a>
+                <a href="#nowhere">只能</a>
+                <a href="#nowhere">变频</a>
+                <a href="#nowhere">艺术柜机</a>
+                <a href="#nowhere">挂机</a>
+                <a href="#nowhere">1.5匹</a>
+                <a href="#nowhere">中央空调</a>
+                <div class="seperator"></div>
+            </div>
+            <div class="row ">
+                <a href="#nowhere">无霜</a>
+                <a href="#nowhere">三门</a>
+                <a href="#nowhere">对开门</a>
+                <a href="#nowhere">电脑温控</a>
+                <a href="#nowhere">智能</a>
+                <a href="#nowhere">冷柜</a>
+                <a href="#nowhere">酒柜</a>
+                <div class="seperator"></div>
+            </div>
+            <div class="row ">
+                <a href="#nowhere">滚筒洗</a>
+                <a href="#nowhere">波轮洗</a>
+                <a href="#nowhere">洗烘一体</a>
+                <a href="#nowhere">迷你</a>
+                <a href="#nowhere">烘干机</a>
+                <a href="#nowhere">双杠</a>
+                <div class="seperator"></div>
+            </div>
+            <div class="row ">
+                <a href="#nowhere">限时特惠</a>
+                <a href="#nowhere">热销爆款</a>
+                <a href="#nowhere">4K全高清</a>
+                <a href="#nowhere"> 六核智能</a>
+                <a href="#nowhere">14核4K</a>
+                <a href="#nowhere">YUNOS</a>
+                <a href="#nowhere" >YUNOS</a>
+                <a href="#nowhere">64位处理器</a>
+                <div class="seperator"></div>
+            </div>
+            <div class="row ">
+                <a href="#nowhere">YUNOS</a>
+                <a href="#nowhere">微信电视</a>
+                <a href="#nowhere">4k超清</a>
+                <a href="#nowhere">64位真4K</a>
+                <a href="#nowhere">10核机芯</a>
+                <a href="#nowhere">V字黑釉底座</a>
+                <a href="#nowhere">4K超清</a>
+                <div class="seperator"></div>
+            </div>
+            <div class="row ">
+                <a href="#nowhere">64位14核</a>
+                <a href="#nowhere">海量影视</a>
+                <a href="#nowhere">人气爆款</a>
+                <a href="#nowhere">限时特惠</a>
+                <a href="#nowhere">真4K屏</a>
+                <a href="#nowhere">65吋巨屏</a>
+                <a href="#nowhere">4K超清视界</a>
+                <a href="#nowhere">限时特惠</a>
+                <div class="seperator"></div>
+            </div>
+            <div class="row ">
+                <a href="#nowhere">55寸旗舰</a>
+                <a href="#nowhere">4K机皇</a>
+                <a href="#nowhere">曲面机皇</a>
+                <a href="#nowhere">轻薄4K
+                </a>
+                <div class="seperator"></div>
+            </div>
+        </div>
+    </div>
+    <div style="height:510px"></div>
+</div>
+<div class="carouselBackgroundDiv"></div><!--背景-->
+
+<!--产品列表-->
+<div class="homepageCategoryProducts">
+    <div class="left-mark"></div>
+    <span class="categoryTitle">美丽人生 FASHION & BEAUTY</span>
+    <br>
+    <div class="eachHomepageCategoryProductsFirst">
+        <img src="img/category/productItemShow.jpg"/>
+    </div>
+    <div class="eachHomepageCategoryProducts">
+        <div class="productItem">
+            <a href="#nowhere"><img width="100px" src="img/category/ximiannai.jpg"></a>
+            <a href="#nowhere" class="productItemDescLink">
+                <span class="productItemDesc">赫恩男士洗面奶套装控油去黑头祛痘印</span>
+            </a>
+            <span class="productPrice">￥69.90</span>
+        </div>
+        <div class="productItem">
+            <a href="#nowhere"><img width="100px" src="img/category/dafuni.jpg"></a>
+            <a href="#nowhere" class="productItemDescLink">
+                <span class="productItemDesc">达芙妮专柜正品女鞋</span>
+            </a>
+            <span class="productPrice">￥69.9</span>
+        </div>
+        <div class="productItem">
+            <a href="#nowhere"><img width="100px" src="img/category/shoubiao.jpg"></a>
+            <a href="#nowhere" class="productItemDescLink">
+                <span class="productItemDesc">2017新款男士正品超薄时尚潮流手表</span>
+            </a>
+            <span class="productPrice">￥624.00</span>
+        </div>
+        <div class="productItem">
+            <a href="#nowhere"><img width="100px" src="img/category/tuoxie.jpg"></a>
+            <a href="#nowhere" class="productItemDescLink">
+                <span class="productItemDesc">回力家居拖鞋</span>
+            </a>
+            <span class="productPrice">￥170.00</span>
+        </div>
+        <div class="productItem">
+            <a href="#nowhere"><img width="100px" src="img/category/yundongxie.jpg"></a>
+            <a href="#nowhere" class="productItemDescLink">
+                <span class="productItemDesc">李宁男鞋运动鞋</span>
+            </a>
+            <span class="productPrice">￥119.00</span>
+        </div>
+        <div class="productItem">
+            <a href="#nowhere"><img width="100px" src="img/category/shoulian.jpg"></a>
+            <a href="#nowhere" class="productItemDescLink">
+                <span class="productItemDesc">东海世家草莓手链</span>
+            </a>
+            <span class="productPrice">￥139.00</span>
+        </div>
+        <div class="productItem">
+            <a href="#nowhere"><img width="100px" src="img/category/shoutibao.jgp.jpg"></a>
+            <a href="#nowhere" class="productItemDescLink">
+                <span class="productItemDesc">女包手提单肩斜挎包</span>
+            </a>
+            <span class="productPrice">￥899.00</span>
+        </div>
+        <div class="productItem">
+            <a href="#nowhere"><img width="100px" src="img/category/kuzi.jpg"></a>
+            <a href="#nowhere" class="productItemDescLink">
+                <span class="productItemDesc">美国里维斯牛仔裤</span>
+            </a>
+            <span class="productPrice">￥551.00</span>
+        </div>
+        <div class="productItem">
+            <a href="#nowhere"><img width="100px" src="img/category/gangtiexia.jpg"></a>
+            <a href="#nowhere" class="productItemDescLink">
+                <span class="productItemDesc">迪士尼版钢铁侠</span>
+            </a>
+            <span class="productPrice">￥98.00</span>
+        </div>
+        <div class="productItem">
+            <a href="#nowhere"><img width="100px" src="img/category/erji.jpg"></a>
+            <a href="#nowhere" class="productItemDescLink">
+                <span class="productItemDesc">蓝牙运动耳机</span>
+            </a>
+            <span class="productPrice">￥158.00</span>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+</div>
+
+<!--页脚-->
+<div style="display: block;" class="footer" id="footer">
+    <div class="footer_ensure" id="footer_ensure">
+
+        <a href="//pages.tmall.com/wow/seller/act/newpinzhibaozhang">
+            <img src="img/site/ensure.png">
+        </a>
+    </div>
+    <div class="footer_desc" id="footer_desc">
+        <div class="descColumn">
+            <span class="descColumnTitle">购物指南</span>
+            <a href="#nowhere">免费注册</a>
+            <a href="#nowhere">开通支付宝</a>
+            <a href="#nowhere">支付宝充值</a>
+        </div>
+        <div class="descColumn">
+            <span class="descColumnTitle">天猫保障</span>
+            <a href="#nowhere">发票保障</a>
+            <a href="#nowhere">售后规则</a>
+            <a href="#nowhere">缺货赔付</a>
+        </div>
+        <div class="descColumn">
+            <span class="descColumnTitle">支付方式</span>
+            <a href="#nowhere">快捷支付</a>
+            <a href="#nowhere">信用卡</a>
+            <a href="#nowhere">蚂蚁花呗</a>
+            <a href="#nowhere">货到付款</a>
+        </div>
+        <div class="descColumn">
+            <span class="descColumnTitle">商家服务</span>
+            <a href="#nowhere">商家入驻</a>
+            <a href="#nowhere">商家中心</a>
+            <a href="#nowhere">天猫智库</a>
+            <a href="#nowhere">天猫规则</a>
+            <a href="#nowhere">物流服务</a>
+            <a href="#nowhere">喵言喵语</a>
+            <a href="#nowhere">运营服务</a>
+        </div>
+        <div class="descColumn">
+            <span class="descColumnTitle">手机天猫</span>
+            <a href="#nowhere"><img src="img/site/ma.png"></a>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+</div>
+
+
+</body>
+</html>
