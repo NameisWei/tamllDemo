@@ -2,6 +2,5 @@
 
 
 
-## How does it look like?
-![Demo](/demo.gif)
+![Demo](/tamlldemo.gif)
  
